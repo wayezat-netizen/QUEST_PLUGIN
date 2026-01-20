@@ -1,0 +1,27 @@
+# Java
+.gradle/
+.idea/
+build/
+*.iml
+.java-version
+
+# Jekyll (docs)
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler (docs)
+.bundle/
+vendor/
+
+# Changelog generator
+CHANGELOG_BBCODE
+CHANGELOG_MD
+CHANGELOG_GFM
+UPDATE_MESSAGE
+
+*.classpath
+*.project
+*/bin/
+*.settings/

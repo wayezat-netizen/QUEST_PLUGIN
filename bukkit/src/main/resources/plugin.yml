@@ -1,0 +1,81 @@
+name: Quests
+
+# This will be replaced with the property "version" in build.gradle
+version: "${version}"
+
+main: com.leonardobishop.quests.bukkit.BukkitQuestsPlugin
+website: https://github.com/LMBishop/Quests
+author: "LMBishop & contributors"
+softdepend:
+- ASkyBlock
+- BedWars1058
+- BentoBox
+- BlockTracker
+- Citizens
+- CMI
+- CoreProtect
+- CustomFishing
+- EcoBosses
+- EcoMobs
+- Essentials
+- EvenMoreFish
+- FabledSkyBlock
+- FancyNpcs
+- IridiumSkyblock
+- MythicMobs
+- Nexo
+- Oraxen
+- PinataParty
+- PlaceholderAPI
+- PlayerBlockTracker
+- PlayerPoints
+- PyroFishingPro
+- ServerNPC
+- ShopGUIPlus
+- SuperiorSkyblock2
+- uSkyBlock
+- Vault
+- Votifier
+- VotingPlugin
+- WildStacker
+- ZNPCsPlus
+prefix: Quests
+api-version: "1.13" # allows new API features but Quests will still work pre-1.13
+folia-supported: true
+
+commands:
+  quests:
+    description: Interact with your quests
+    usage: /quests
+    permission: quests.command
+    aliases: [q, quest]
+
+#todo redo perms
+permissions:
+  quests.command:
+    description: Permission for main command
+    default: true
+  quests.command.category:
+    description: Permission to execute /q category
+    default: op
+  quests.command.started:
+    description: Permission to execute /q started
+    default: op
+  quests.command.quest:
+    description: Permission to execute /q quest
+    default: op
+  quests.command.start:
+    description: Permission to execute /q start
+    default: op
+  quests.command.track:
+    description: Permission to execute /q track
+    default: op
+  quests.command.cancel:
+    description: Permission to execute /q cancel
+    default: op
+  quests.command.random:
+    description: Permission to execute /q random
+    default: op
+  quests.admin:
+    description: Permission for the admin commands
+    default: op
